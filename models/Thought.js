@@ -39,7 +39,7 @@ const ThoughtSchema = new Schema(
       get: (createdAtVal) => dateFormat(createdAtVal),
     },
     username: {
-      type: true,
+      type: String,
       required: true,
     },
     reactions: [ReactionSchema],
