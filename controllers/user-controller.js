@@ -9,7 +9,7 @@ const userController = {
   },
 
   // GET USERS
-  getAllUser(req, res) {
+  getAllUsers(req, res) {
     User.find({})
       .populate({
         path: 'friends',
